@@ -7,19 +7,29 @@ let arr = [
 ];
 
 function PrintStudentswithMap() {
-  //Write your code here , just console.log
+  let result = arr.map(function(marksover50) {
+    console.log(marksover50);
+  });
 }
 
 function PrintStudentsbyForEach() {
-  //Write your code here , just console.log
+  arr.forEach(function(number) {
+    console.log(number);
+  });
 }
 
 function addData() {
-  //Write your code here, just console.log
+  arr.push(4,"susan","20",45);
+  arr.forEach(function(number) {
+    console.log(number);
+  });
 }
 
 function removeFailedStudent() {
-  //Write your code here, just console.log
+  arr.shift();
+  arr.forEach(function(number) {
+    console.log(number);
+  });
 }
 
 function concatenateArray() {
